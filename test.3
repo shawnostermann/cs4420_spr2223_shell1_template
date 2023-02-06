@@ -22,36 +22,36 @@ Command name: 'echo'
     argv[0]: 'echo'
     argv[1]: 'Hello'
     argv[2]: 'World'
-  stdin:  '<undirected>'
-  stdout: '<undirected>'
-  stderr: '<undirected>'
+  stdin:  UNDIRECTED
+  stdout: UNDIRECTED
+  stderr: UNDIRECTED
 
 ========== line 2 ==========
 Command name: '/bin/cat'
     argv[0]: '/bin/cat'
   stdin:  '/etc/motd'
-  stdout: '<undirected>'
-  stderr: '<undirected>'
+  stdout: UNDIRECTED
+  stderr: UNDIRECTED
 
 ========== line 3 ==========
 Command name: '/bin/cat'
     argv[0]: '/bin/cat'
-  stdin:  '<undirected>'
+  stdin:  UNDIRECTED
   stdout: 'outfile'
-  stderr: '<undirected>'
+  stderr: UNDIRECTED
 
 ========== line 4 ==========
 Command name: 'echo'
     argv[0]: 'echo'
     argv[1]: 'this is a test'
-  stdin:  '<undirected>'
+  stdin:  UNDIRECTED
   stdout: PIPE1
-  stderr: '<undirected>'
+  stderr: UNDIRECTED
 Command name: 'cat'
     argv[0]: 'cat'
   stdin:  PIPE1
-  stdout: '<undirected>'
-  stderr: '<undirected>'
+  stdout: UNDIRECTED
+  stderr: UNDIRECTED
 
 ========== line 5 ==========
 Command name: 'gcc'
@@ -59,8 +59,8 @@ Command name: 'gcc'
     argv[1]: '-c'
     argv[2]: '-Wall'
     argv[3]: 'file.c'
-  stdin:  '<undirected>'
-  stdout: '<undirected>'
+  stdin:  UNDIRECTED
+  stdout: UNDIRECTED
   stderr: 'ERRS' (append)
 
 ========== line 6 ==========
@@ -68,14 +68,14 @@ Command name: 'cat'
     argv[0]: 'cat'
   stdin:  'infile'
   stdout: PIPE1
-  stderr: '<undirected>'
+  stderr: UNDIRECTED
 Command name: 'tr'
     argv[0]: 'tr'
     argv[1]: 'a-z'
     argv[2]: 'A-Z'
   stdin:  PIPE1
   stdout: PIPE2
-  stderr: '<undirected>'
+  stderr: UNDIRECTED
 Command name: 'cat'
     argv[0]: 'cat'
   stdin:  PIPE2
@@ -86,7 +86,7 @@ Command name: 'wc'
     argv[1]: '-l'
   stdin:  PIPE3
   stdout: 'out'
-  stderr: '<undirected>'
+  stderr: UNDIRECTED
 
 END
 

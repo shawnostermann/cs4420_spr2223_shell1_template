@@ -36,18 +36,18 @@ cat > $TEST.correct << END
 Command name: 'echo'
     argv[0]: 'echo'
     argv[1]: 'This file contains errors'
-  stdin:  '<undirected>'
-  stdout: '<undirected>'
-  stderr: '<undirected>'
+  stdin:  UNDIRECTED
+  stdout: UNDIRECTED
+  stderr: UNDIRECTED
 
 Error on line 3: unterminated string
 ========== line 5 ==========
 Command name: 'echo'
     argv[0]: 'echo'
     argv[1]: 'I am a valid command and should appear!!'
-  stdin:  '<undirected>'
-  stdout: '<undirected>'
-  stderr: '<undirected>'
+  stdin:  UNDIRECTED
+  stdout: UNDIRECTED
+  stderr: UNDIRECTED
 
 Error on line 7: unterminated string
 Error on line 9: syntax error
@@ -61,9 +61,9 @@ Error on line 19: syntax error
 Command name: 'echo'
     argv[0]: 'echo'
     argv[1]: 'This last command is valid!'
-  stdin:  '<undirected>'
-  stdout: '<undirected>'
-  stderr: '<undirected>'
+  stdin:  UNDIRECTED
+  stdout: UNDIRECTED
+  stderr: UNDIRECTED
 
 END
 

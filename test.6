@@ -53,17 +53,17 @@ Command name: 'cat'
     argv[24]: 'x'
     argv[25]: 'y'
     argv[26]: 'z'
-  stdin:  '<undirected>'
-  stdout: '<undirected>'
-  stderr: '<undirected>'
+  stdin:  UNDIRECTED
+  stdout: UNDIRECTED
+  stderr: UNDIRECTED
 
 ========== line 2 ==========
 Command name: '/bin/cc'
     argv[0]: '/bin/cc'
     argv[1]: 'this is all one word'
-  stdin:  '<undirected>'
-  stdout: '<undirected>'
-  stderr: '<undirected>'
+  stdin:  UNDIRECTED
+  stdout: UNDIRECTED
+  stderr: UNDIRECTED
 
 ========== line 3 ==========
 Command name: '/bin/ls'
@@ -72,82 +72,82 @@ Command name: '/bin/ls'
     argv[2]: 'this'
     argv[3]: 'string'
     argv[4]: 'of stuff?'
-  stdin:  '<undirected>'
-  stdout: '<undirected>'
-  stderr: '<undirected>'
+  stdin:  UNDIRECTED
+  stdout: UNDIRECTED
+  stderr: UNDIRECTED
 
 ========== line 4 ==========
 Command name: 'command names can be quoted, of course'
     argv[0]: 'command names can be quoted, of course'
     argv[1]: '/etc/motd'
-  stdin:  '<undirected>'
-  stdout: '<undirected>'
-  stderr: '<undirected>'
+  stdin:  UNDIRECTED
+  stdout: UNDIRECTED
+  stderr: UNDIRECTED
 
 ========== line 5 ==========
 Command name: '/bin/ls'
     argv[0]: '/bin/ls'
     argv[1]: '/tmp'
-  stdin:  '<undirected>'
-  stdout: '<undirected>'
-  stderr: '<undirected>'
+  stdin:  UNDIRECTED
+  stdout: UNDIRECTED
+  stderr: UNDIRECTED
 
 ========== line 6 ==========
 Command name: 'echo'
     argv[0]: 'echo'
     argv[1]: 'test harder strings'
     argv[2]: '||<<>>||>&>&'
-  stdin:  '<undirected>'
-  stdout: '<undirected>'
-  stderr: '<undirected>'
+  stdin:  UNDIRECTED
+  stdout: UNDIRECTED
+  stderr: UNDIRECTED
 
 ========== line 8 ==========
 Command name: 'echo'
     argv[0]: 'echo'
     argv[1]: 'Pipe test'
-  stdin:  '<undirected>'
-  stdout: '<undirected>'
-  stderr: '<undirected>'
+  stdin:  UNDIRECTED
+  stdout: UNDIRECTED
+  stderr: UNDIRECTED
 
 ========== line 9 ==========
 Command name: 'a'
     argv[0]: 'a'
-  stdin:  '<undirected>'
+  stdin:  UNDIRECTED
   stdout: PIPE1
-  stderr: '<undirected>'
+  stderr: UNDIRECTED
 Command name: 'b'
     argv[0]: 'b'
   stdin:  PIPE1
   stdout: PIPE2
-  stderr: '<undirected>'
+  stderr: UNDIRECTED
 Command name: 'c'
     argv[0]: 'c'
   stdin:  PIPE2
   stdout: PIPE3
-  stderr: '<undirected>'
+  stderr: UNDIRECTED
 Command name: 'd'
     argv[0]: 'd'
   stdin:  PIPE3
-  stdout: '<undirected>'
-  stderr: '<undirected>'
+  stdout: UNDIRECTED
+  stderr: UNDIRECTED
 
 ========== line 10 ==========
 Command name: 'echo'
     argv[0]: 'echo'
     argv[1]: 'test'
-  stdin:  '<undirected>'
+  stdin:  UNDIRECTED
   stdout: PIPE1
-  stderr: '<undirected>'
+  stderr: UNDIRECTED
 Command name: 'a'
     argv[0]: 'a'
   stdin:  PIPE1
   stdout: PIPE2
-  stderr: '<undirected>'
+  stderr: UNDIRECTED
 Command name: 'b'
     argv[0]: 'b'
   stdin:  PIPE2
   stdout: PIPE3
-  stderr: '<undirected>'
+  stderr: UNDIRECTED
 Command name: 'c'
     argv[0]: 'c'
     argv[1]: '1'
@@ -155,12 +155,12 @@ Command name: 'c'
     argv[3]: '3'
   stdin:  PIPE3
   stdout: PIPE4
-  stderr: '<undirected>'
+  stderr: UNDIRECTED
 Command name: 'd'
     argv[0]: 'd'
   stdin:  PIPE4
-  stdout: '<undirected>'
-  stderr: '<undirected>'
+  stdout: UNDIRECTED
+  stderr: UNDIRECTED
 
 ========== line 11 ==========
 Command name: 'c1'
@@ -190,16 +190,16 @@ Command name: 'grep'
     argv[1]: 'foo'
   stdin:  '/tmp/foo.input'
   stdout: PIPE1
-  stderr: '<undirected>'
+  stderr: UNDIRECTED
 Command name: 'sort'
     argv[0]: 'sort'
   stdin:  PIPE1
   stdout: PIPE2
-  stderr: '<undirected>'
+  stderr: UNDIRECTED
 Command name: 'more'
     argv[0]: 'more'
   stdin:  PIPE2
-  stdout: '<undirected>'
+  stdout: UNDIRECTED
   stderr: '~/More.out' (append)
 
 END

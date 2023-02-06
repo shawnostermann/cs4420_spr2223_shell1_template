@@ -49,56 +49,56 @@ cat > $TEST.correct << END
 Command name: 'echo'
     argv[0]: 'echo'
     argv[1]: 'All of these redirections are valid'
-  stdin:  '<undirected>'
-  stdout: '<undirected>'
-  stderr: '<undirected>'
+  stdin:  UNDIRECTED
+  stdout: UNDIRECTED
+  stderr: UNDIRECTED
 
 ========== line 3 ==========
 Command name: 'cat'
     argv[0]: 'cat'
   stdin:  'i'
-  stdout: '<undirected>'
-  stderr: '<undirected>'
+  stdout: UNDIRECTED
+  stderr: UNDIRECTED
 
 ========== line 4 ==========
 Command name: 'cat'
     argv[0]: 'cat'
-  stdin:  '<undirected>'
+  stdin:  UNDIRECTED
   stdout: 'o'
-  stderr: '<undirected>'
+  stderr: UNDIRECTED
 
 ========== line 5 ==========
 Command name: 'cat'
     argv[0]: 'cat'
-  stdin:  '<undirected>'
+  stdin:  UNDIRECTED
   stdout: 'O' (append)
-  stderr: '<undirected>'
+  stderr: UNDIRECTED
 
 ========== line 6 ==========
 Command name: 'cat'
     argv[0]: 'cat'
-  stdin:  '<undirected>'
-  stdout: '<undirected>'
+  stdin:  UNDIRECTED
+  stdout: UNDIRECTED
   stderr: 'e'
 
 ========== line 7 ==========
 Command name: 'cat'
     argv[0]: 'cat'
-  stdin:  '<undirected>'
-  stdout: '<undirected>'
+  stdin:  UNDIRECTED
+  stdout: UNDIRECTED
   stderr: 'E' (append)
 
 ========== line 9 ==========
 Command name: 'cat'
     argv[0]: 'cat'
-  stdin:  '<undirected>'
+  stdin:  UNDIRECTED
   stdout: 'o'
   stderr: 'e'
 
 ========== line 10 ==========
 Command name: 'cat'
     argv[0]: 'cat'
-  stdin:  '<undirected>'
+  stdin:  UNDIRECTED
   stdout: 'o'
   stderr: 'E' (append)
 
@@ -106,7 +106,7 @@ Command name: 'cat'
 Command name: 'cat'
     argv[0]: 'cat'
   stdin:  'i'
-  stdout: '<undirected>'
+  stdout: UNDIRECTED
   stderr: 'e'
 
 ========== line 12 ==========
@@ -114,7 +114,7 @@ Command name: 'cat'
     argv[0]: 'cat'
   stdin:  'i'
   stdout: 'o'
-  stderr: '<undirected>'
+  stderr: UNDIRECTED
 
 ========== line 14 ==========
 Command name: 'cat'
@@ -141,14 +141,14 @@ Command name: 'cat'
 Command name: 'echo'
     argv[0]: 'echo'
     argv[1]: 'The rest are in a different order, but should also be valid'
-  stdin:  '<undirected>'
-  stdout: '<undirected>'
-  stderr: '<undirected>'
+  stdin:  UNDIRECTED
+  stdout: UNDIRECTED
+  stderr: UNDIRECTED
 
 ========== line 20 ==========
 Command name: 'cat'
     argv[0]: 'cat'
-  stdin:  '<undirected>'
+  stdin:  UNDIRECTED
   stdout: 'o'
   stderr: 'e'
 
@@ -164,13 +164,13 @@ Command name: 'cat'
     argv[0]: 'cat'
   stdin:  'i'
   stdout: 'o'
-  stderr: '<undirected>'
+  stderr: UNDIRECTED
 
 ========== line 26 ==========
 Command name: 'cat'
     argv[0]: 'cat'
   stdin:  'i'
-  stdout: '<undirected>'
+  stdout: UNDIRECTED
   stderr: 'e'
 
 ========== line 28 ==========
