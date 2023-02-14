@@ -3,7 +3,7 @@
  */
 
 
-#define MAX_ARGS 100
+#define MAX_ARGS 500
 
 
 /* This is the definition of a command */
@@ -25,7 +25,11 @@ struct command {
 /* externals */
 extern int yydebug;
 extern int debug;
+extern int lines;  // defined and updated by parser, used by bash.cc
 
+
+/* you should use THIS routine instead of malloc */
+void *MallocZ(int numbytes);
 
 /* global routine decls */
 void doline(struct command *pass);
