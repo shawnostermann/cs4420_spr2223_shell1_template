@@ -151,3 +151,22 @@ yyerror(const char *error_string, ...)
     fprintf(f,"\n");
     va_end(ap);
 }
+
+// You should use this routine instead of malloc() to avoid some memory problems
+#include <stdlib.h>
+#include <string.h>
+void *
+MallocZ (int nbytes)
+{
+    char *ptr = malloc(nbytes);  // use the real routine
+    if (ptr == NULL)
+	{
+	    perror ("MallocZ failed, fatal\n");
+	    exit (66);
+	}
+
+	// initialize the space to all zeroes
+    memset (ptr, '\00', nbytes);
+
+    return (ptr);
+}
